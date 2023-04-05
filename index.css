@@ -1,0 +1,179 @@
+/* Style sheet for Amazon login page replica */
+
+/* Sets the global font family to Ariel */
+*  {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Sets global properties for everything above horizontal line */
+.sign-in {
+    display: flex;
+    flex-direction: column ;
+    align-items: center;   
+}
+
+/* Sets properties for the footer (form and first help link) */
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: small;
+    color: rgb(72, 72, 72);
+    margin-top: 30px;
+}
+
+/* Right justifies the "Forget Password" link  */
+#forgot {
+    float: right;
+    margin-right: 10px;
+}
+
+/* Formats padding for both buttons */
+.button {
+    padding: 6px;
+}
+
+/* Formats the "Continue" button */
+#continue {
+    width: 100%;
+    margin-bottom: 10px;
+    font-size: medium;  
+    font-weight: 100;
+}
+
+/* Formats the "Create Your Amazon Account" button */
+#create {
+    width: 450px;
+    background-color: rgb(238, 238, 238);
+    border-color: gray;
+    font-size: medium;
+    margin-bottom: 3em;
+}
+
+/* Guarantees padding for password input field */
+#password {
+    padding: 10px;
+}
+
+/* Indents password field label */
+#label-password {
+    margin-left: 36px;
+}
+
+/* Adjusts triangle before first Help link */
+#arrow {
+    font-size: 7px;
+    position: relative;
+    top: -2px;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(58, 133, 253);
+}
+
+h1 {
+    color: black;
+    margin: 0;
+    padding: 0;
+    font-weight: 100;
+}
+
+h3 {
+    display:flex;
+    flex-direction: row;
+    font-weight:100;
+    font-size: medium;
+    color: rgb(126, 126, 126);
+
+}
+
+/* Creates lines before and after "New To Amazon?" */
+h3::after {
+    content: "";
+    width: 152px;
+    background-color: transparent;
+    display: block;
+    height: 1px;
+    border-top: 1px solid #b4b4b4;
+    position: relative;
+    top: 2px;
+    margin-top: 5px;
+    margin-left: 10px;
+    z-index: 1 ;
+}
+
+h3::before {
+    content: "";
+    width: 152px;
+    background-color: transparent;
+    display: block;
+    height: 1px;
+    border-top: 1px solid #b4b4b4;
+    position: relative;
+    top: 2px;
+    margin-top: 5px;
+    margin-right: 10px;
+    z-index: 1 ;
+}
+
+/* Formats the Sign In form */
+button {
+    background: rgba(240, 193, 75);
+    border:rgb(0, 0, 0) solid 1px;
+    border-radius: 2px;
+    text-align: center;
+}
+
+form {
+    width: 434px;  
+    margin: 10px;
+    padding:10px;
+    text-align: left;
+    font-size: medium;
+    border: 1px solid lightgray;
+    border-radius: 2px;
+}
+form label {
+    margin-bottom: 20px;
+    font-weight: 100;
+    font-size: 15px;
+}
+
+form ::placeholder {
+    font-size: medium;
+    color: rgb(112, 112, 112);
+    font-weight: 100;
+}
+
+input {
+    width: 95%;
+    margin-bottom: 25px;
+    margin-top: 10px;
+    margin-right: 10px;
+    padding: 20x;
+    align-items: center;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(168, 168, 168);
+}
+
+#email {
+    padding: 10px;
+}
+
+
+/* Formats the footer */
+ul {
+    position: relative;
+    left: -20px;
+    list-style-type: none;
+    text-align: left;
+    padding-inline-start: 0;
+}
+
+li {
+    float: left;
+    padding-right: 10px;
+
+}
